@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --normal-3: Poppins;
+  --font-roboto: Roboto;
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --medium-4-size: 16px;
+  --font-size-13xl: 32px;
+  --normal-5-size: 14px;
+  --normal-6-size: 12px;
+  --normal-3-size: 18px;
+  --font-size-mini: 15px;
+  --medium-1-size: 24px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray: rgba(255, 255, 255, 0.3);
+  --color-black: #000;
+  --green-400: #34d399;
+  --gray-500: #6b7280;
+  --green-100: #d1fae5;
+  --green-50: #ecfdf5;
+  --gray-200: #e5e7eb;
+  --gray-50: #f9fafb;
+  --green-600: #059669;
+
+  /* Gaps */
+  --gap-xl: 20px;
+  --gap-5xs: 8px;
+  --gap-9xs: 4px;
+  --gap-5xl: 24px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-61xl: 80px;
+  --padding-3xs: 10px;
+  --padding-base: 16px;
+  --padding-9xs: 4px;
+  --padding-5xs: 8px;
+  --padding-10xs: 3px;
+  --padding-13xl: 32px;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+  --br-980xl: 999px;
+  --br-5xs: 8px;
+  --br-base: 16px;
+
+  /* Effects */
+  --card-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+}
