@@ -82,3 +82,20 @@ form button {
 .form-control-2 input {
   margin-right: .25rem;
 }
+form .relative {
+  width: 100%;
+  position: relative;
+}
+form .relative input {
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+}
+form .relative i.fa {
+  opacity: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: .625rem;
+  margin-right: .625rem;
+}

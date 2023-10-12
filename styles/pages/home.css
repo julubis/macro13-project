@@ -48,10 +48,14 @@ main {
 .progress {
   width: 30rem;
   height: 20.125rem;
+  margin-top: 2rem;
 }
 
 .calendar {
   /* width: 100%; */
   width: 24rem;
   height: 20.125rem;
+  border-radius: .5rem;
+  margin-top: 2rem;
+  border: 1px solid var(--gray-200);
 }
