@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitlife | Login</title>
+  <link rel="shortcut icon" href="assets/logo.png" type="image/png">
 
-
-<script src="scripts/pages/login.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/pages/login.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="logo">
+        <span>Fitlife</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img src="assets/Eating healthy food-amico.svg" alt="">
+    </section>
+    <section>
+      <form class="card">
+        <h2 class="text-medium text-3">Welcome</h2>
+        <p class="text-normal text-5">Welcome back! Please enter your details</p>
+        <div class="form-control">
+          <label for="email-input" class="text-medium text-5">Email</label>
+          <input type="email" name="email" id="email-input">
+        </div>
+        <div class="form-control">
+          <label for="password-input" class="text-medium text-5">Password</label>
+          <input type="password" name="password" id="password-input">
+        </div>
+        <div class="form-control-2">
+          <input type="checkbox" value="" id="remember">
+          <label for="remember" class="text-medium text-6">Remember me</label>
+        </div>
+        <button type="submit" class="btn text-medium">Sign In</button>
+        <p class="small text-normal text-6">Don't you have an account? <a href="register.html">Sign Up</a></p>
+      </form>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="scripts/login.js"></script>
+</body>
+</html>

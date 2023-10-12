@@ -1,0 +1,84 @@
+@import url("../main.css");
+@import url("../typography.css");
+@import url("../color.css");
+@import url("../component.css");
+
+header {
+  background-color: transparent;
+  backdrop-filter: blur(0);
+}
+
+header nav {
+  justify-content: flex-start;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 7rem;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+}
+
+main section:first-child {
+  background-color: var(--green-50);
+}
+
+section .card {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2.5rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--gray-500);
+}
+
+.card .small {
+  text-align: center;
+  color: #000;
+}
+
+.small a {
+  color: var(--green-400);
+}
+.small a:hover {
+  color: var(--green-500);
+}
+
+form button {
+  margin-top: 2rem;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+}
+.form-control label {
+  margin-bottom: .5rem;
+}
+.form-control-2 {
+  display: flex;
+  align-items: center;
+}
+.form-control-2 input {
+  margin-right: .25rem;
+}

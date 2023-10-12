@@ -1,0 +1,11 @@
+@import url("../main.css");
+@import url("../typography.css");
+@import url("../color.css");
+@import url("../component.css");
+
+main {
+    width: 89%;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+  }

@@ -1,0 +1,57 @@
+@import url("../main.css");
+@import url("../typography.css");
+@import url("../color.css");
+@import url("../component.css");
+
+main {
+  width: 89%;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dashboard {
+  padding: 3rem;
+  background-color: var(--green-50);
+  border-radius: 1.125rem;
+}
+
+#greeting {
+  color: var(--gray-500);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  /* width: 100%; */
+  /* gap: 1.5rem; */
+}
+
+.dashboard section {
+  padding: 2rem 3rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  
+}
+
+/* .dashboard section.one {
+  width: 39rem;
+}
+
+.dashboard section.two {
+  width: 31rem;
+} */
+
+
+.progress {
+  width: 30rem;
+  height: 20.125rem;
+}
+
+.calendar {
+  /* width: 100%; */
+  width: 24rem;
+  height: 20.125rem;
+}

@@ -1,4 +1,61 @@
-<h1>Hello world</h1>
-<script>
-  console.log('9090')
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitlife | Home</title>
+  <link rel="shortcut icon" href="assets/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/pages/home.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="logo">
+        <span>Fitlife</span>
+      </a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <div class="extra">
+        <img src="assets/user.png" alt="profile">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="dashboard">
+      <p id="greeting" class="text-medium text-2">Good Morning</p>
+      <p id="username" class="text-medium text-1">Kate Milis</p>
+      <div class="wrapper">
+        <section class="one">
+          <h2 class="text-medium text-2">My Progress</h2>
+          <canvas class="progress"></canvas>
+        </section>
+        <section class="two">
+          <h2 class="text-medium text-2">Calendar</h2>
+          <div class="calendar"></div>
+        </section>
+      </div>
+      <div class="wrapper">
+        <section class="one">
+          <h2 class="text-medium text-2">My Plan</h2>
+          <div class="goal"></div>
+        </section>
+        <section class="two">
+          <h2 class="text-medium text-2">Journal</h2>
+          <div class="journal"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
