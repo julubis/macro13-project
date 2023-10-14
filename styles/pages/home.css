@@ -58,4 +58,41 @@ main {
   border-radius: .5rem;
   margin-top: 2rem;
   border: 1px solid var(--gray-200);
+  padding: 1.5rem 2rem;
 }
+
+.calendar .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.calendar .btn-group button {
+  padding: .625rem;
+  background-color: aqua;
+}
+
+.calendar .body {
+  margin-top: 1rem;
+}
+
+.calendar .day, .calendar .date {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: .5rem;
+}
+
+.calendar .day p {
+  text-align: center;
+}
+
+.calendar .date button {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+.calendar .date button:hover {
+  background-color: var(--green-400);
+}
+/* .calendar .date button {
+  width: calc(100% / 7);
+} */

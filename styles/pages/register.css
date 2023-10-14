@@ -26,7 +26,13 @@ main section {
 }
 
 main section:first-child {
+  display: flex;
+  justify-content: center;
   background-color: var(--green-50);
+}
+
+main section:first-child img {
+  width: 75%;
 }
 
 section .card {

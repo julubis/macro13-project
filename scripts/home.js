@@ -43,3 +43,6 @@ new Chart(ctx, {
     }
   }
 });
+
+const calendar = document.querySelector('.calendar .date')
+// calendar.innerHTML = ""
