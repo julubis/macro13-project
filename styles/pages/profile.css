@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+
+    --text-color: #404246;
+    --color-text: #6B7280;
+    --background: #ECFDF5;
+    --botton-color: #34D399;
+    --bg-color: #FFF;
+}
+
+body {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 8%;
+    background: var(--background);
+    position: relative;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.content{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    justify-items: start;
+}
+
+.profil {
+    width: 45rem;
+    height: 24.875rem;
+    background: var(--bg-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.text {
+    color: var(--color-text);
+    font-weight: 300;
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 16rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: start;
+}
+
+label {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input {
+
+    background: var(--bg-color);
+    border-style: solid;
+    border-radius: .5rem;
+    border-color: var(--botton-color);
+    height: 2.5rem;
+    width: 15rem;
+}
+
+.input {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 20rem;
+    gap: 1rem;
+}
+input:hover {
+    background-color: #fff;
+    border: 1px solid var(--botton-color);
+  }
+  input:focus {
+    background-color: #fff;
+    outline: 0 none;
+    border: 2px solid --botton-color;
+  }
+
+.sidebar{
+    position: relative;
+}
+
+.photo {
+    width: 18rem;
+    height: 24.875rem;
+    align-items: center;
+    border-radius: 0.75rem;
+    background: #FFF;
+}
+
+
+img {
+    width: 17.5rem;
+    height: 20rem;
+    border-radius: 1.25rem;
+    padding: .5rem;
+}
+
+
+button {
+    display: flex;
+    width: 17.5rem;
+    height: 3rem;
+    padding: 1rem;
+    background: var(--botton-color);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
