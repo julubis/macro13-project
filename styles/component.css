@@ -1,5 +1,15 @@
 /* @import url("color.css"); */
 
+#root {
+  transition: opacity .3s;
+  opacity: 1;
+}
+
+#root.hide {
+  transition: opacity 0;
+  opacity: 0;
+}
+
 /* Buttons */
 .btn {
   font-size: .75rem;

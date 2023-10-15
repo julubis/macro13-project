@@ -1,11 +1,27 @@
+const Plan = {
+  async render() {
+    document.querySelector('link#css-page').href = "styles/pages/plan.css";
+    let response = await fetch("../../views/plan.html");
+    return await response.text();
+  },
+  async afterRender() {
+    document.querySelectorAll('header nav li>a').forEach(el => el.classList.remove('active'));
+    document.querySelector('header nav li>a.plan').classList.add('active')
+  }
+}
+
+export default Plan;
+
+/*
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const dayName = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 class Calendar {
-  constructor() {
+  constructor(element) {
     this.day;
     this.month;
     this.year;
+    this.element = element;
   }
   nextMonth() {
     this.day = 1;
@@ -24,9 +40,6 @@ class Calendar {
       this.year--;
     }
   }
-  getFullDate() {
-
-  }
 
 }
 
@@ -42,3 +55,5 @@ function createCalendar(year, month) {
 const arr = [1,2,3,4,5,6,7,8,9]
 arr.unshift(0,1,2,3,4)
 console.log(arr)
+
+*/

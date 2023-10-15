@@ -1,8 +1,3 @@
-@import url("../main.css");
-@import url("../typography.css");
-@import url("../color.css");
-@import url("../component.css");
-
 header {
   background-color: transparent;
   backdrop-filter: blur(0);

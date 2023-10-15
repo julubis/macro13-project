@@ -1,3 +1,20 @@
+const Home = {
+  async render() {
+    document.querySelector('link#css-page').href = "styles/pages/home.css";
+    let response = await fetch("../../views/home.html");
+    return await response.text();
+  },
+  async afterRender() {
+    document.querySelectorAll('header nav li>a').forEach(el => el.classList.remove('active'));
+    document.querySelector('header nav li>a.home').classList.add('active')
+  }
+}
+
+export default Home;
+
+
+/*
+
 const ctx = document.getElementById('chart');
 
 new Chart(ctx, {
@@ -44,5 +61,9 @@ new Chart(ctx, {
   }
 });
 
+
+
 const calendar = document.querySelector('.calendar .date')
 // calendar.innerHTML = ""
+
+*/
