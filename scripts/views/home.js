@@ -1,5 +1,15 @@
+import {getActiveUser} from '../utils/auth.js';
+import greeting from '../utils/greeting.js';
+let user
+
 const Home = {
   async render() {
+    user = getActiveUser()
+    if (!user) {
+      window.location.href = '/#/login';
+      return '';
+    }
+
     document.querySelector('link#css-page').href = "styles/pages/home.css";
     let response = await fetch("../../views/home.html");
     return await response.text();
@@ -7,6 +17,9 @@ const Home = {
   async afterRender() {
     document.querySelectorAll('header nav li>a').forEach(el => el.classList.remove('active'));
     document.querySelector('header nav li>a.home').classList.add('active')
+
+    document.getElementById('username').textContent = user.name
+    document.getElementById('greeting').textContent = greeting()
   }
 }
 

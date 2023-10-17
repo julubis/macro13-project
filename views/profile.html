@@ -1,54 +1,50 @@
-<h1>Good day,Kate Milis</h1>
-    <p>Welcome to website Fitlife. We are ready to help you with a healthy diet and lifestyle</p>
-    <div class="content">
-        <div class="main">
-        <h1>Account Settings</h1>
+<h2 class="text-1 text-semibold">Good day, Kate Milis</h2>
+<p class="text-3">Welcome to Fitlife. We are ready to help you with a healthy diet and lifestyle</p>
+
+<div class="wrapper">
+    <div>
+        <h3 class="text-2 text-semibold">Account Settings</h3>
         <div class="profil">
-            <h2>Personal Information</h2>
+            <h4 class="text-3 text-medium">Personal Information</h4>
             <p class="text">Here you can add a new information about yourself or edit an waisting personal information</p>
-            <div class="form">
-                <div class="row">
-                    <p><label for="first name">First Name</label></p>
-                    <p class="input"><input type="text" name="first name"></p>
-                    <p><label for="email">Email</label></p>
-                    <p class="input"><input type="text" name="Email"></p>
-                    <p><label for="height">Height</label></p>
-                    <p class="input"><input type="text" name="Height"></p>
+            <form class="form" id="personal-information">
+                <div class="grid data">
+                    
                 </div>
-
-                <div class="row">
-                    <p><label for="last name">Last Name</label></p>
-                    <p class="input"><input type="text" name="last name"></p>
-                    <p><label for="weight">Weight</label></p>
-                    <p class="input"><input type="text" name="weight"></p>
-                    <p><label for="gender">Gender</label></p>
-                    <p class="input"><input type="text" name="gender"></p>
+                <div class="grid action-form">
+                    <button type="submit" class="btn">Save changes</button>
+                    <button type="button" class="btn btn-outline">Discard changes</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-
-    <div class="sidebar">
-        <h1>Photo Settings</h1>
+    
+    <div>
+        <h3 class="text-2 text-semibold">Photo Settings</h3>
         <div class="photo">
-            <img src="ika1.jpg" alt="">
-            <button>Browse Photo</button>
+            <img src="../assets/male.png" alt="profile-picture">
+            <input type="file" name="photo" id="photo-profile" class="hidden" accept="image/*">
+            <label for="photo-profile" class="btn">Browse Photo</label>
+            <hr>
+            <button class="btn" id="sign-out">Sign Out</button>
         </div>
     </div>
+</div>
 
+<div class="wrapper">
     <div class="profil">
-        <h2>Changing Password</h2>
+        <h4 class="text-3 text-medium">Changing Password</h4>
         <p class="text">Here you can change the password</p>
-        <div class="form">
-            <div class="row">
-                <p><label for="Current Password">Current Password</label></p>
-                <p><input type="text" name="Current Password"></p>
-                <p><label for="Confirm Password">Confirm Password</label></p>
-                <p><input type="text" name="Confirm Password"></p>
+        <form class="form" id="change-password">
+            <div class="grid data">
+                
             </div>
-            <div class="row">
-                <p><label for="New Password">New Password</label></p>
-                <p class="input"><input type="text" name="New Password"></p>
+            <div class="grid action-form">
+                <button type="submit" class="btn">Save changes</button>
+                <button type="button" class="btn btn-outline">Discard changes</button>
             </div>
-        </div>
+        </form>
     </div>
+</div>
+
+

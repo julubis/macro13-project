@@ -1,16 +1,26 @@
 import UrlParser from './routes/url-parser.js';
 import routes from './routes/routes.js';
+import { getActiveUser } from './utils/auth.js';
+import { loadPhoto } from './utils/user.js';
 
 function drawerInitiator(url) {
-  const navbar = document.querySelector('header>nav')
+  const navbarNav = document.querySelector('header>nav ul')
+  const navbarAction = document.querySelector('header>nav .extra')
   if (url === '/login' || url === '/register') {
-    navbar.querySelector('ul').classList.add('hidden')
-    navbar.querySelector('.extra').classList.add('hidden')
+    navbarNav.classList.add('hidden')
+    navbarAction.classList.add('hidden')
   } else {
-    navbar.querySelector('ul').classList.remove('hidden')
-    navbar.querySelector('.extra').classList.remove('hidden')
+    navbarNav.classList.remove('hidden')
+    navbarAction.classList.remove('hidden')
   }
   
+  if (getActiveUser()) {
+    navbarAction.innerHTML = `<a href="/#/profile"><img src="assets/male.png"></img></a>`
+    loadPhoto(navbarAction.querySelector('a>img'))
+  } else {
+    navbarAction.innerHTML = `<a href="/#/login" class="btn btn-outline">Login</a>
+    <a href="/#/register" class="btn">Get Started</a>`;
+  }
 }
 
 class App {

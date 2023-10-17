@@ -1,5 +1,13 @@
+import {getActiveUser} from '../utils/auth.js';
+let user
+
 const Plan = {
   async render() {
+    if (!getActiveUser()) {
+      window.location.href = '/#/login';
+      return '';
+    }
+
     document.querySelector('link#css-page').href = "styles/pages/plan.css";
     let response = await fetch("../../views/plan.html");
     return await response.text();

@@ -40,6 +40,14 @@ section .card {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
+.card .wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .card h2 {
   text-align: center;
 }
@@ -99,4 +107,96 @@ form .relative i.fa {
   transform: translateY(-50%);
   margin-left: .625rem;
   margin-right: .625rem;
+}
+
+#btn-back {
+  margin-top: -1rem;
+  padding: .625rem;
+}
+
+#btn-back svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#gender-page .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+#gender-page .option,
+#activity-page .option {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--green-400);
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+#gender-page .option:hover,
+#activity-page .option:hover {
+  background-color: var(--green-50);
+}
+#gender-page input[type="radio"]:checked+label,
+#activity-page input[type="radio"]:checked+label {
+  background-color: var(--green-400);
+}
+#gender-page input[type="radio"]:checked+label>p,
+#activity-page input[type="radio"]:checked+label>p {
+  color: #000;
+}
+
+#gender-page .option p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+#activity-page .option {
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+
+#activity-page .option p {
+  margin: 0;
+}
+
+#gender-page .option > img {
+  width: 5rem;
+}
+
+#tall-page .form-control p,
+#weight-page .form-control p {
+  margin: 0;
+}
+
+#age-page .form-control,
+#tall-page .form-control,
+#weight-page .form-control {
+  margin: 3.375rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#age-page input[type="number"],
+#tall-page input[type="number"],
+#weight-page input[type="number"] {
+  background-color: #fff;
+  width: 6rem;
+  font-size: 2.5rem;
+  border: none;
+  padding: .5rem;
+}
+#age-page input[type="number"]::-webkit-inner-spin-button,
+#tall-page input[type="number"]::-webkit-inner-spin-button,
+#weight-page input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
