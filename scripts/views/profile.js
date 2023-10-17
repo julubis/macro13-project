@@ -74,6 +74,7 @@ const Profile = {
   },
   async afterRender() {
     document.querySelectorAll('header nav li>a').forEach(el => el.classList.remove('active'));
+    document.getElementById('greeting').textContent = `Good day, ${user.name}`;
     const form1 = document.querySelector('form#personal-information');
     const form2 = document.querySelector('form#change-password');
 
