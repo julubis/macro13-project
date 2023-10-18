@@ -1,4 +1,5 @@
 import {getActiveUser} from '../utils/auth.js';
+import Calendar from '../utils/calendar.js';
 import greeting from '../utils/greeting.js';
 let user
 
@@ -20,6 +21,19 @@ const Home = {
 
     document.getElementById('username').textContent = user.name
     document.getElementById('greeting').textContent = greeting()
+
+    const calendar = new Calendar(document.querySelector('.calendar'))
+
+    const stroke = document.getElementById('stroke-progress')
+    let i = 0
+    // setInterval(() => {
+    //   if (i == 100) {
+    //     i = 0
+    //   }
+    //   stroke.style.strokeDashoffset = 439.6 * (100 - i)/100
+    //   i++
+    // }, 10)
+    
   }
 }
 

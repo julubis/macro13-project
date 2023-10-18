@@ -10,10 +10,10 @@
       <h2 class="text-medium text-2">Calendar</h2>
       <div class="calendar">
         <div class="header">
-          <p class="text-medium text-3">October 2023</p>
+          <p class="text-medium text-3" id="month-year">October 2023</p>
           <div class="btn-group">
-            <button>p</button>
-            <button>n</button>
+            <button id="prev">p</button>
+            <button id="next">n</button>
           </div>
         </div>
         <div class="body">
@@ -26,9 +26,7 @@
             <p>Fri</p>
             <p>Sat</p>
           </div>
-          <div class="date">
-            <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>10</button><button>11</button><button>12</button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
-          </div>
+          <div class="date"></div>
         </div>
       </div>
     </section>
@@ -36,7 +34,12 @@
   <div class="wrapper">
     <section class="one">
       <h2 class="text-medium text-2">My Plan</h2>
-      <div class="goal"></div>
+      <div class="goal">
+        <svg width="164" height="164" viewBox="0 0 164 164" id="progress">
+          <circle r="70" cx="82" cy="82" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
+          <circle id="stroke-progress" r="70" cx="82" cy="82" fill="transparent" stroke="#60e6a8" stroke-width="12px" stroke-linecap="round" stroke-dasharray="439.6px" stroke-dashoffset="109.9px"></circle>
+        </svg>
+      </div>
     </section>
     <section class="two">
       <h2 class="text-medium text-2">Journal</h2>

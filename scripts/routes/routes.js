@@ -5,7 +5,7 @@ import Home from "../views/home.js";
 import Food from "../views/food.js";
 import Plan from "../views/plan.js";
 import News from "../views/news.js";
-// import FoodDetail from "../views/detail.js"
+import FoodDetail from "../views/detail.js"
 import Profile from "../views/profile.js"
 
 const routes = {
@@ -14,6 +14,7 @@ const routes = {
   '/register': Register,
   '/home': Home,
   '/food': Food,
+  '/food/:id': FoodDetail,
   '/plan': Plan,
   '/news': News,
   '/profile': Profile

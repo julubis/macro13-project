@@ -1,0 +1,10 @@
+main {
+  width: 89%;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.breadcrum a {
+  color: var(--green-400);
+}
