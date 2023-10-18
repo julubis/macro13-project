@@ -5,7 +5,7 @@
     "image": "assets/food-1.webp",
     "category": "lunch",
     "description": "Fresh pasta cooks up faster than dried, making it a must-have for fast weeknight dinners like this luscious yet healthy meal. Eggs are the base of the creamy sauce. They don't get fully cooked, so use pasteurized-in-the-shell eggs if you prefer.",
-    "ingrdients": [
+    "ingredients": [
       ["Extra-virgin olive oil", "½ tbsp"],
       ["Panko breadcrumbs", "½ cup"],
       ["Clove garlic, minced", "1 small"],
@@ -38,7 +38,7 @@
     "image": "assets/food-2.webp",
     "category": "breakfast",
     "description": "Give your morning eggs a tasty spin by building an easy individual pizza on a prepared naan.",
-    "ingrdients": [
+    "ingredients": [
       ["Whole-wheat naan", "1"],
       ["Part-skim ricotta cheese", "2 tbsp"],
       ["Low-sodium marinara", "1 tbsp"],
@@ -63,7 +63,7 @@
     "category": "dinner",
     "image": "assets/food-3.webp",
     "description": "Because refrigerated fresh pasta cooks much faster than dried pasta, this Italian-inspired pasta dish will be on the table lickety-split! Puttanesca, traditionally made with tomatoes, olives, capers, anchovies and garlic, gets shrimp for extra protein and artichoke hearts to boost the vegetable servings (and the fiber!). If you can't find frozen artichoke hearts, sub in drained canned artichoke hearts.",
-    "ingrdients": "8 ounces refrigerated fresh linguine noodles, preferably whole-wheat#####1 tablespoon extra-virgin olive oil#####1 pound peeled and deveined large shrimp#####1 (15 ounce) can no-salt-added tomato sauce#####1 ¼ cups frozen quartered artichoke hearts, thawed (8 ounces)#####¼ cup chopped pitted Kalamata olives#####1 tablespoon capers, rinsed#####¼ teaspoon salt",
+    "ingredients": "8 ounces refrigerated fresh linguine noodles, preferably whole-wheat#####1 tablespoon extra-virgin olive oil#####1 pound peeled and deveined large shrimp#####1 (15 ounce) can no-salt-added tomato sauce#####1 ¼ cups frozen quartered artichoke hearts, thawed (8 ounces)#####¼ cup chopped pitted Kalamata olives#####1 tablespoon capers, rinsed#####¼ teaspoon salt",
     "direction": [
       "Bring a large pot of water to a boil. Cook linguine according to package instructions. Drain.",
       "Meanwhile, heat oil in a large skillet over high heat. Add shrimp in a single layer and cook, undisturbed, until browned on the bottom, 2 to 3 minutes. Stir in tomato sauce. Add artichoke hearts, olives, capers and salt; cook, stirring often, until the shrimp is cooked through and the artichoke hearts are hot, 2 to 3 minutes longer.",
@@ -82,7 +82,7 @@
     "category": "lunch",
     "image": "assets/food-4.webp",
     "description": "Two of our favorite comfort-food sandwiches join forces in these family-friendly dinner sandwiches. We found that softer buns make this easier to eat, and it's all the better when wrapped takeout-style in a sheet of foil.",
-    "ingrdients": "2 teaspoons organic canola oil or avocado oil#####1 pound lean ground beef#####1 teaspoon dried oregano#####¼ teaspoon salt#####1 cup no-salt-added tomato sauce#####1 cup Sautéed Peppers & Onions (see associated recipe)#####4 (6 inch) whole-wheat sub rolls, split#####4 slices reduced-sodium provolone cheese",
+    "ingredients": "2 teaspoons organic canola oil or avocado oil#####1 pound lean ground beef#####1 teaspoon dried oregano#####¼ teaspoon salt#####1 cup no-salt-added tomato sauce#####1 cup Sautéed Peppers & Onions (see associated recipe)#####4 (6 inch) whole-wheat sub rolls, split#####4 slices reduced-sodium provolone cheese",
     "direction": [
       "Arrange oven rack in upper third of the oven. Preheat broiler. Line a baking sheet with foil.",
       "Heat oil in a large skillet over medium-high heat. Add beef, oregano and salt; cook, crumbling with a wooden spoon, until cooked through, 4 to 6 minutes. Add tomato sauce and cook until bubbling, 1 to 2 minutes.",
@@ -102,7 +102,7 @@
     "category": "breakfast",
     "image": "assets/food-5.webp",
     "description": "To make this 20-minute vegan curry even faster, buy precut veggies from the salad bar at the grocery store. To make it a full, satisfying dinner, serve over cooked brown rice. When shopping for simmer sauce, look for one with 400 mg of sodium or less and check the ingredient list for cream or fish sauce if you want to keep this vegan. If you like a spicy kick, add a few dashes of your favorite hot sauce at the end.",
-    "ingrdients": "2 teaspoons avocado oil or canola oil#####1 cup chopped onion#####1 cup diced bell pepper#####1 medium zucchini, halved and sliced#####1 (15 ounce) can chickpeas, drained and rinsed#####1 ½ cups coconut curry simmer sauce (see Tip)#####½ cup vegetable broth#####4 cups baby spinach#####2 cups precooked brown rice, heated according to package instructions",
+    "ingredients": "2 teaspoons avocado oil or canola oil#####1 cup chopped onion#####1 cup diced bell pepper#####1 medium zucchini, halved and sliced#####1 (15 ounce) can chickpeas, drained and rinsed#####1 ½ cups coconut curry simmer sauce (see Tip)#####½ cup vegetable broth#####4 cups baby spinach#####2 cups precooked brown rice, heated according to package instructions",
     "direction": [
       "Heat oil in a large skillet over medium-high heat. Add onion, pepper and zucchini; cook, stirring often, until the vegetables begin to brown, 5 to 6 minutes.",
       "Add chickpeas, simmer sauce and broth and bring to a simmer, stirring. Reduce heat to medium-low and simmer until the vegetables are tender, 4 to 6 minutes. Stir in spinach just before serving. Serve over rice."],
@@ -119,7 +119,7 @@
     "category": "lunch",
     "image": "assets/food-6.webp",
     "description": "We've bulked up the serving size of beef pad thai by adding in lots of healthy veggies like matchstick carrots, snap peas and scallions. Look for whole-grain brown-rice pad thai noodles to add an additional 3 grams fiber to each serving.",
-    "ingrdients": "8 ounces pad thai rice noodles, preferably brown rice noodles#####2 teaspoons canola oil#####¾ pound lean ground beef#####2 cups stringless snap peas#####2 cups matchstick carrots#####½ cup chopped scallions#####½ cup pad thai sauce (see Tip)#####Chopped peanuts and lime wedges for serving",
+    "ingredients": "8 ounces pad thai rice noodles, preferably brown rice noodles#####2 teaspoons canola oil#####¾ pound lean ground beef#####2 cups stringless snap peas#####2 cups matchstick carrots#####½ cup chopped scallions#####½ cup pad thai sauce (see Tip)#####Chopped peanuts and lime wedges for serving",
     "direction": [
       "Bring a pot of water to a boil. Cook noodles in boiling water according to package instructions until al dente. Reserve 1 cup cooking liquid and drain the noodles.",
       "Meanwhile, heat oil in a large nonstick skillet over medium-high heat. Add beef, and cook, crumbling with a wooden spoon, until browned, 4 to 5 minutes. Add snap peas, carrots and scallions, and cook, stirring often, until the peas are bright green, 2 to 3 minutes.",
@@ -138,7 +138,7 @@
     "category": "snack",
     "image": "assets/food-9.jpg",
     "description": "Waffles are a dish enjoyed throughout the world, especially in the United States and Belgium, where there are dozens of variations in different regions.",
-    "ingrdients": "2 g baking powder\n20 g corn starch flour\n60 g unsalted butter\n1/2 large egg\n120 grams of white flour\n240 ml milk\n1/2 tsp salt\n1/2 tsp vanilla extract\n10 grams of granulated sugar",
+    "ingredients": "2 g baking powder\n20 g corn starch flour\n60 g unsalted butter\n1/2 large egg\n120 grams of white flour\n240 ml milk\n1/2 tsp salt\n1/2 tsp vanilla extract\n10 grams of granulated sugar",
     "direction": [
       "Warm the milk but don't boil it, add the butter, stir until the butter melts, set aside.",
       "Mix the dry ingredients together.",
@@ -158,7 +158,7 @@
     "category": "snack",
     "image": "assets/food-10.jpg",
     "description": "Banana cake is a cake made using bananas as the main ingredient and a typical cake ingredient.",
-    "ingrdients": "3 g stevia sweetener\n15 g wpro milk tea\n50 g instant oatmeal\n1 large egg\n1 tsp cinnamon\n1/4 tsp salt\n1 extra large banana\n1 tsp baking soda",
+    "ingredients": "3 g stevia sweetener\n15 g wpro milk tea\n50 g instant oatmeal\n1 large egg\n1 tsp cinnamon\n1/4 tsp salt\n1 extra large banana\n1 tsp baking soda",
     "direction": [
       "Mash the banana.",
       "Stir the eggs until foamy, add them to the bananas.",
@@ -178,7 +178,7 @@
     "category": "snack",
     "image": "assets/food-11.jpg",
     "description": "Banana oat cakes are a healthier version of traditional banana cakes and are made with whole wheat flour instead of refined flour.",
-    "ingrdients": [
+    "ingredients": [
       "10 g baking powder\n30 grams of milk\n80 g wheat rolls\n1 extra large egg\n1 tbsp honey\n175 grams of banana\n50 grams white wheat flour (all needed)"],
     "direction": [
       "Peel and mash the banana. Mix with eggs, milk and honey.",
@@ -199,7 +199,7 @@
     "category": "breakfast",
     "image": "assets/food-12.jpg",
     "description": "This processed wheat menu is included in the list of salad dishes.",
-    "ingrdients": "1 tbsp honey\n3 tbsp oats\n1 glass of strawberry yogurt\n100 g dragon fruit\n100 g apples",
+    "ingredients": "1 tbsp honey\n3 tbsp oats\n1 glass of strawberry yogurt\n100 g dragon fruit\n100 g apples",
     "direction": [
       "Cook the wheat with water according to the package.",
       "Transfer to a bowl then add the yogurt.",
@@ -218,7 +218,7 @@
     "category": "breakfast",
     "image": "assets/food-13.jpg",
     "description": "Sarapan atau snack menggunakan 4 bahan.",
-    "ingrdients": "1 medium leaf lettuce\n1 slice of whole wheat bread\n1 large omelet\n1 whole medium red tomato",
+    "ingredients": "1 medium leaf lettuce\n1 slice of whole wheat bread\n1 large omelet\n1 whole medium red tomato",
     "direction": [
       "Toast the bread in a nonstick skillet for one minute on each side.",
       "Arrange the omelet and vegetables on the bread.",
@@ -237,7 +237,7 @@
     "category": "lunch",
     "image": "assets/food-14.png",
     "description": "Made specially with fresh squid.",
-    "ingrdients": "1 spoon black pepper sauce\n1 tablespoon cooking oil\n300 grams of squid\n2 cherry tomatoes\n100 grams of onions\n50 grams of large red chilies\n50 ml water",
+    "ingredients": "1 spoon black pepper sauce\n1 tablespoon cooking oil\n300 grams of squid\n2 cherry tomatoes\n100 grams of onions\n50 grams of large red chilies\n50 ml water",
     "direction": [
       "Split the onion in half and slice it in half lengthwise and sauté in oil until fragrant.",
       "Add squid, chili, black pepper sauce and water.",
@@ -256,7 +256,7 @@
     "category": "lunch",
     "image": "assets/food-15.jpg",
     "description": "So delicious and easy to cook",
-    "ingrdients": [
+    "ingredients": [
       ["Cooking oil", "3 ml"],
       ["Onion chili sauce", "8 g"],
       ["Sweet soy sauce", "1 tbsp"],
@@ -285,7 +285,7 @@
     "category": "lunch",
     "image": "assets/food-16.jpg",
     "description": "A filling dish, loaded with nutrients",
-    "ingrdients": [
+    "ingredients": [
       ["fried chili sauce", "1 tbsp"],
       ["Large egg", "1"],
       ["Cook white rice", "1 bowl"],
@@ -312,7 +312,7 @@
     "category": "lunch",
     "image": "assets/food-17.jpg",
     "description": "Simple, low calorie dish.",
-    "ingrdients": [
+    "ingredients": [
       ["Chicken onion flavored vermicelli", "55 g"],
       ["Carrots", "60 g"],
       ["Broccoli (with salt, drained, cooked, boiled)", "60 g"]
@@ -335,7 +335,7 @@
     "category": "snack",
     "image": "assets/food-18.jpg",
     "description": "Easy to prepare snack with 3 ingredients",
-    "ingrdients": [
+    "ingredients": [
       ["Quick melted cheese", "30 gram"],
       ["Slice of whole wheat bread", "1 slice"],
       ["Banana", "100 g"]

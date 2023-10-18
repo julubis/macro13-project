@@ -8,3 +8,102 @@ main {
 .breadcrum a {
   color: var(--green-400);
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+
+
+.wrapper img {
+  width: 37.5rem;
+  height: 28.125rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.wrapper .card {
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--gray-200);
+}
+
+.card .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+.card .header svg {
+  width: 2rem;
+  height: 2rem;
+}
+.card span {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  background-color: var(--green-50);
+  border-radius: 2rem;
+  padding: .25rem .5rem;
+  border: 1px solid var(--green-400);
+}
+.card span svg {
+  width: 1rem;
+  height: 1rem;
+}
+.card span {
+  font-size: .875rem;
+}
+.card .more {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.card p {
+  /* color: var(--gray-500); */
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.card .ingredients {
+  width: 100%;
+  display: flex;
+  
+}
+.card .ingredients ul {
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: var(--gray-100);
+  border-radius: 1rem;
+}
+.ingredients ul li hr {
+  border-bottom: 1px solid #000;
+  margin: .375rem 0;
+  width: 100%;
+}
+
+.ingredients ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.ingredients p {
+  color: #000;
+}
+
+.card ol.direction {
+  margin-left: 1rem;
+  list-style: decimal;
+}

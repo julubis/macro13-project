@@ -12,8 +12,16 @@
         <div class="header">
           <p class="text-medium text-3" id="month-year">October 2023</p>
           <div class="btn-group">
-            <button id="prev">p</button>
-            <button id="next">n</button>
+            <button id="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>              
+            </button>
+            <button id="next">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>              
+            </button>
           </div>
         </div>
         <div class="body">
@@ -35,10 +43,45 @@
     <section class="one">
       <h2 class="text-medium text-2">My Plan</h2>
       <div class="goal">
-        <svg width="164" height="164" viewBox="0 0 164 164" id="progress">
-          <circle r="70" cx="82" cy="82" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
-          <circle id="stroke-progress" r="70" cx="82" cy="82" fill="transparent" stroke="#60e6a8" stroke-width="12px" stroke-linecap="round" stroke-dasharray="439.6px" stroke-dashoffset="109.9px"></circle>
-        </svg>
+        <div class="btn-group">
+          <button class="btn">Diet</button>
+          <button class="btn">Workout</button>
+          <button class="btn">Water</button>
+        </div>
+        <div class="data">
+          <div class="metric">
+            <div class="section">
+              <span></span>
+              <div>
+                <p class="title">Burn</p>
+                <p class="ammount">600 kcal</p>
+              </div>
+            </div>
+            <div class="section">
+              <span></span>
+              <div>
+                <p class="title">Target</p>
+                <p class="ammount">1000 kcal</p>
+              </div>
+            </div>
+            <div class="section">
+              <span></span>
+              <div>
+                <p class="title">Left</p>
+                <p class="ammount">400 kcal</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="progress-wrapper">
+            <svg width="164" height="164" viewBox="0 0 164 164" id="progress">
+              <circle r="70" cx="82" cy="82" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
+              <circle id="stroke-progress" r="70" cx="82" cy="82" fill="transparent" stroke="#60e6a8" stroke-width="12px" stroke-linecap="round" stroke-dasharray="439.6px" stroke-dashoffset="109.9px"></circle>
+            </svg>
+            <p>75%</p>
+          </div>
+        </div>
+        
       </div>
     </section>
     <section class="two">

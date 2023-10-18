@@ -20,8 +20,6 @@ main {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem;
-  /* width: 100%; */
-  /* gap: 1.5rem; */
 }
 
 .dashboard section {
@@ -31,15 +29,6 @@ main {
   
 }
 
-/* .dashboard section.one {
-  width: 39rem;
-}
-
-.dashboard section.two {
-  width: 31rem;
-} */
-
-
 .progress {
   width: 30rem;
   height: 20.125rem;
@@ -47,9 +36,7 @@ main {
 }
 
 .calendar {
-  /* width: 100%; */
   width: 24rem;
-  /* height: 20.125rem; */
   border-radius: .5rem;
   margin-top: 2rem;
   border: 1px solid var(--gray-200);
@@ -63,7 +50,16 @@ main {
 }
 .calendar .btn-group button {
   padding: .625rem;
-  background-color: aqua;
+  border-radius: 50%;
+  border: 1px solid var(--green-400);
+  /* background-color: aqua; */
+}
+.calendar .btn-group button:hover {
+  background-color: var(--green-400);
+}
+.calendar .btn-group button svg {
+  color: #000;
+  width: 1rem;
 }
 
 .calendar .body {
@@ -104,4 +100,73 @@ main {
 
 #progress {
   transform: rotate(-90deg);
+}
+
+.goal {
+  width: 30rem;
+}
+
+.goal .btn-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.goal .btn-group button {
+  font-size: .875rem;
+  border-radius: 99px;
+  background-color: #fff;
+  border: 2px solid var(--green-400);
+}
+.goal .btn-group button:hover {
+  background-color: var(--green-400);
+}
+.goal .data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.goal .data .section {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.goal .data span {
+  border-left: 4px solid var(--green-400);
+  height: 1.75rem;
+}
+
+.goal .data .title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+.goal .data .ammount {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.goal .progress-wrapper {
+  position: relative;
+}
+.goal .progress-wrapper p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.journal {
+  width: 24rem;
+}
+
+.metric {
 }

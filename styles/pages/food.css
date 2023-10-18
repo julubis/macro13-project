@@ -80,6 +80,7 @@ main {
     margin-top: 1rem;
     display: flex;
     gap: .5rem;
+    color: var(--gray-500);
 }
 .card .desc svg {
     width: 1rem;
