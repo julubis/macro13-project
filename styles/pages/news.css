@@ -9,3 +9,68 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
+.search-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box .input-icons {
+  width: 30%;
+}
+
+.search-box input{
+  border: 2px solid #34D399;
+  border-radius: .5rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.card-container {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.card{
+  border-radius: .5rem;
+  width: 280px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.10);
+  border: 1px solid var(--gray-200);
+  margin-bottom: 1rem;
+}
+
+.card:hover .body,
+.card:hover {
+  background-color: var(--gray-100);
+}
+
+.card .header {
+  background-color: #fff;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  height: 210px;
+  width: 100%;
+}
+.card .header img {
+  height: 210px;
+  width: 100%;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  object-fit: cover;
+}
+.card .body {
+  padding: 1rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  text-align: start;
+  padding-bottom: 2rem;
+}
+.card .body p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}

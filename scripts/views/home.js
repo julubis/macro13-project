@@ -1,4 +1,5 @@
 import {getActiveUser} from '../utils/auth.js';
+import { totalCalorie } from '../utils/calories.js'
 import Calendar from '../utils/calendar.js';
 import greeting from '../utils/greeting.js';
 let user
@@ -17,12 +18,15 @@ const Home = {
   },
   async afterRender() {
     document.querySelectorAll('header nav li>a').forEach(el => el.classList.remove('active'));
-    document.querySelector('header nav li>a.home').classList.add('active')
+    document.querySelector('header nav li>a.home').classList.add('active');
 
-    document.getElementById('username').textContent = user.name
-    document.getElementById('greeting').textContent = greeting()
+    document.getElementById('username').textContent = user.name;
+    document.getElementById('greeting').textContent = greeting();
 
-    const calendar = new Calendar(document.querySelector('.calendar'))
+    const calendar = new Calendar(document.querySelector('.calendar'));
+
+    const target = document.getElementById('target-goal');
+    target.textContent = `${totalCalorie(user)} kcal`
 
     const stroke = document.getElementById('stroke-progress')
     let i = 0

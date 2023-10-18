@@ -17,12 +17,18 @@ const Detail = {
     const response = await fetch("../../../data/recipes.json");
     const recipes = await response.json();
     
-    const {name, image, description, serving, time, direction} = recipes.filter(r => r.id === +url.id)[0]
+    const {name, image, description, serving, time, ingredients, direction} = recipes.filter(r => r.id === +url.id)[0]
     document.getElementById('food-img').src = image;
     document.getElementById('food-name').textContent = name;
     document.getElementById('food-desc').textContent = description;
     document.getElementById('food-serv').textContent = `${serving} serving`;
     document.getElementById('food-time').textContent = `${time} minutes`;
+    document.getElementById('food-ingred').innerHTML = `
+    ${ingredients.map(ingred => `<li>
+      <p>${ingred[0]}</p>
+      <p>${ingred[1]}</p>
+    </li>`).join('<li><hr></li>')}
+    `
     document.getElementById('food-direct').innerHTML = `
     ${direction.map(direct => `<li>${direct}</li>`).join('')}
     `
