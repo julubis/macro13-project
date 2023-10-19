@@ -51,10 +51,16 @@ const Plan = {
 
     const calendar = new Calendar(document.querySelector('.calendar'));
     date = date = `${calendar.date}/${calendar.month+1}/${calendar.year}`;
+    
+    Progress(mealProg, 80)
+    Progress(activityProg, 35)
+    Progress(waterProg, 74)
 
     calendar.change(() => {
       date = date = `${calendar.date}/${calendar.month+1}/${calendar.year}`;
       Progress(mealProg, 90)
+      Progress(activityProg, 40)
+      Progress(waterProg, 50)
     })
 
     addMeal.addEventListener('click', e => {
@@ -74,12 +80,12 @@ const Plan = {
     })
     addActForm.addEventListener('submit', ev => {
       ev.preventDefault()
-      const {food} = Object.fromEntries(new FormData(addActForm))
+      const {activity, time} = Object.fromEntries(new FormData(addActForm))
       
     })
     addWaterForm.addEventListener('submit', ev => {
       ev.preventDefault()
-      const {food} = Object.fromEntries(new FormData(addWaterForm))
+      const {water} = Object.fromEntries(new FormData(addWaterForm))
       
     })
 
