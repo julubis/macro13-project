@@ -14,3 +14,270 @@
     <p class="breadcrum-text">Plan</p>
   </div>
 </div>
+
+<div class="card-container">
+  <section class="one">
+    <div class="header-goal">
+      <h2 class="text-medium text-2">My Plan</h2>
+    </div>
+    <div class="goal">
+      
+      <div class="btn-group">
+        <button class="btn">Diet</button>
+        <button class="btn">Exercise</button>
+        <button class="btn">Water</button>
+      </div>
+      <div class="data">
+        <div class="metric">
+          <div class="section" id="metric-1">
+            <span></span>
+            <div>
+              <p class="title">Burn</p>
+              <p class="ammount">600 kcal</p>
+            </div>
+          </div>
+          <div class="section" id="metric-2">
+            <span></span>
+            <div>
+              <p class="title">Target</p>
+              <p id="target-goal" class="ammount">1000 kcal</p>
+            </div>
+          </div>
+          <div class="section" id="metric-3">
+            <span></span>
+            <div>
+              <p class="title">Left</p>
+              <p class="ammount">400 kcal</p>
+            </div>
+          </div>
+        </div>
+        <div class="progress-wrapper">
+          <svg width="164" height="164" viewBox="0 0 164 164" id="progress">
+            <circle r="70" cx="82" cy="82" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
+            <circle id="stroke-progress" r="70" cx="82" cy="82" fill="transparent" stroke="#60e6a8" stroke-width="12px" stroke-linecap="round" stroke-dasharray="439.6px" stroke-dashoffset="109.9px"></circle>
+          </svg>
+          <p id="percent">75%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="two">
+    <div class="calendar">
+      <div class="header">
+        <p class="text-medium text-3" id="month-year"></p>
+        <div class="btn-group">
+          <button id="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>              
+          </button>
+          <button id="next">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="body">
+        <div class="day">
+          <p>Sun</p>
+          <p>Mon</p>
+          <p>Tue</p>
+          <p>Wed</p>
+          <p>Thu</p>
+          <p>Fri</p>
+          <p>Sat</p>
+        </div>
+        <div class="date"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div class="card-container" id="meal-card">
+  <section>
+    <div class="card">
+      <div class="head">
+        <h3>Meal</h3>
+        <button id="add-meal">Add data</button>
+      </div>
+      
+      <div class="data">
+        <div class="metric">
+          <div class="section" id="food-carb">
+            <span></span>
+            <div>
+              <p class="title">Carbs</p>
+              <p id="carbs-ammount" class="ammount">0 gram</p>
+            </div>
+          </div>
+          <div class="section" id="food-pro">
+            <span></span>
+            <div>
+              <p class="title">Protein</p>
+              <p id="protein-ammount" class="ammount">0 gram</p>
+            </div>
+          </div>
+          <div class="section" id="food-fat">
+            <span></span>
+            <div>
+              <p class="title">Fats</p>
+              <p id="fats-ammount" class="ammount">0 gram</p>
+            </div>
+          </div>
+        </div>
+        <div class="progress-wrapper" id="progress-meal">
+          <svg width="164" height="164" viewBox="0 0 164 164">
+            <circle r="70" cx="82" cy="82" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
+            <circle class="run" r="70" cx="82" cy="82" fill="transparent" stroke="#34d399" stroke-width="12px" stroke-linecap="round" stroke-dasharray="439.6px" stroke-dashoffset="439.6px"></circle>
+          </svg>
+          <p>0%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card2">
+    <div class="header-journal">
+      <h2 class="text-medium text-2">Last update</h2>
+    </div>
+    <div class="journal" id="journal-meal">
+    </div>
+  </section>
+</div>
+
+<div class="card-container" id="activity-card">
+  <section>
+    <div class="card">
+      <div class="head">
+        <h3>Activity</h3>
+        <button id="add-activity">Add data</button>
+      </div>
+      
+      <div class="data">
+        <div class="metric">
+          <div class="section" id="activity-cal">
+            <span></span>
+            <div>
+              <p class="title">Calories</p>
+              <p class="ammount" id="cal-ammount">0 kcal</p>
+            </div>
+          </div>
+          <div class="section" id="activity-time">
+            <span></span>
+            <div>
+              <p class="title">Duration</p>
+              <p id="time-ammount" class="ammount">0 minutes</p>
+            </div>
+          </div>
+        </div>
+        <div class="progress-wrapper" id="progress-activity">
+          <svg width="164" height="164" viewBox="0 0 164 164">
+            <circle r="70" cx="82" cy="82" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
+            <circle class="run" r="70" cx="82" cy="82" fill="transparent" stroke="#fb923c" stroke-width="12px" stroke-linecap="round" stroke-dasharray="439.6px" stroke-dashoffset="439.6px"></circle>
+          </svg>
+          <p>0%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card2">
+    <div class="header-journal">
+      <h2 class="text-medium text-2">Last update</h2>
+    </div>
+    <div class="journal" id="journal-activity">
+    </div>
+  </section>
+</div>
+
+<div class="card-container" id="water-card">
+  <section>
+    <div class="card">
+      <div class="head">
+        <h3>Drink</h3>
+        <button id="add-water">Add data</button>
+      </div>
+      
+      <div class="data">
+        <div class="metric">
+          <div class="section" id="food-carb">
+            <span></span>
+            <div>
+              <p class="title">Drunk</p>
+              <p class="ammount" id="water-ammount">0 ml</p>
+            </div>
+          </div>
+          <div class="section" id="food-pro">
+            <span></span>
+            <div>
+              <p class="title">Target</p>
+              <p class="ammount">3000 ml</p>
+            </div>
+          </div>
+        </div>
+        <div class="progress-wrapper" id="progress-water">
+          <svg width="164" height="164" viewBox="0 0 164 164">
+            <circle r="70" cx="82" cy="82" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
+            <circle class="run" r="70" cx="82" cy="82" fill="transparent" stroke="#60a5fa" stroke-width="12px" stroke-linecap="round" stroke-dasharray="439.6px" stroke-dashoffset="439.6px"></circle>
+          </svg>
+          <p>0%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card2">
+    <div class="header-journal">
+      <h2 class="text-medium text-2">Last update</h2>
+    </div>
+    <div class="journal" id="journal-water">
+    </div>
+  </section>
+</div>
+
+<div class="modal hidden">
+  <form class="modal-body" id="add-water-form">
+    <p>Add water</p>
+    <div class="form-control">
+      <input type="number" name="weight" id="water-input" step="10" placeholder="250" value="" required>
+      <p>ml</p>
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>
+<div class="modal hidden">
+  <form class="modal-body classic" id="add-meal-form">
+    <p>Add meal</p>
+    <div class="form-control classic">
+      <label for="meal-input">Meal name</label>
+      <select name="food" id="meal-input" required>
+      </select>
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>
+<div class="modal hidden">
+  <form class="modal-body" id="add-activity-form">
+    <p>Add activity</p>
+    <div class="form-control classic">
+      <label for="activity">Activity type</label>
+      <select name="activity" id="activity" required>
+        <option value="1">Walking</option>
+        <option value="2">Bicycling</option>
+        <option value="3">Weight Training</option>
+        <option value="4">Golf</option>
+        <option value="5">Soccer</option>
+        <option value="6">Running</option>
+        <option value="7">Swimming</option>
+        <option value="8">Tennis</option>
+        <option value="9">Fishing</option>
+      </select>
+    </div>
+    <div class="form-control classic">
+      <label for="activity-time">Duration (minutes)</label>
+      <input type="number" name="time" id="activity-time" step="10" placeholder="30" value="" required>
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>

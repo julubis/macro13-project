@@ -1,25 +1,22 @@
-class Progress {
-  constructor(context, radius) {
-    this.percent = 0;
-    this.context = context;
-    this.radius = radius
+/**@param {HTMLElement} ctx */
+const Progress = (ctx, percent) => {
+  const progress = ctx.querySelector('svg .run');
+  const text = ctx.querySelector('p');
+  if (percent > 100) {
+    percent = 100;
   }
-  _init() {
-    this.context.innerHTML = `
+  let i = 0;
 
-    `
-  }
-  _add(step) {
-    this.percent++;
-    if(this.percent <= this.percent) {
-      setTimeout(this._add(step), 10);
+  progress.style.strokeDashoffset = '439.6px';
+  const si = setInterval(() => {
+    progress.style.strokeDashoffset = `${439.6 * ((100 - i)/100)}px`;
+    text.textContent = `${i}%`;
+    i++;
+    if (i > percent) {
+      clearInterval(si);
     }
-  }
-  _render() {
-    
-  }
-  show(percent) {
-    this.percent = 0
-    this.percent++
-  }
+  }, 10)
+
 }
+
+export default Progress;

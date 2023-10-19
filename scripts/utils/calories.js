@@ -76,4 +76,4 @@ const totalCalorieToBurn = (totalCalorie, scoreBMI) => {
   return totalCalorie;
 }
 
-export {totalCalorie}
+export {totalCalorie, totalCalorieToBurn, countBMI}

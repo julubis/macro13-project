@@ -6,7 +6,7 @@ class Calendar {
     this.date;
     this.month;
     this.year;
-    this.handler;
+    this.handler = () => {};
     this.context = context;
     this._init();
   }
@@ -44,12 +44,27 @@ class Calendar {
   addEvent() {
     const buttons = this.context.querySelectorAll('button.date-btn')
     buttons.forEach(btn => {
-      btn.classList.remove('active')
+      // btn.classList.remove('active')
       btn.addEventListener('click', () => {
         buttons.forEach(btn => btn.classList.remove('active'))
         btn.classList.add('active');
+        this.date = Number(btn.getAttribute('date-number'));
+        this.handler();
       })
     })
+  }
+  getDateInWeeks() {
+    const week = []
+    const firstDateWeek = this.date - new Date(this.year, this.month, this.date).getDay(); 
+    const daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
+    let lastDateWeek = firstDateWeek + 6;
+    if (lastDateWeek > daysInMonth) {
+      lastDateWeek = daysInMonth;
+    }
+    for (let i=firstDateWeek; i <= lastDateWeek; i++) {
+      week.push(`${i}/${this.month+1}/${this.year}`);
+    }
+    return week;
   }
   render() {
     this.context.querySelector('.header p').textContent = `${months[this.month]} ${this.year}`;
@@ -60,7 +75,7 @@ class Calendar {
     let dateString = ''
     for (let i = 0; i <= daysInMonth + firstDay; i++) {
       if (i - firstDay >= 0 && i - firstDay < daysInMonth) {
-        dateString += `<button class="date-btn active ${today === new Date(`${this.year}-${this.month+1}-${i-firstDay + 1}`).setHours(0,0,0,0) ? ' today': ''}" date-number="${i-firstDay + 1}" ${today < new Date(`${this.year}-${this.month+1}-${i-firstDay + 1}`).setHours(0,0,0,0) ? 'disabled': ''}>${i-firstDay + 1}</button>`;
+        dateString += `<button class="date-btn ${today === new Date(`${this.year}-${this.month+1}-${i-firstDay + 1}`).setHours(0,0,0,0) ? 'active today': ''}" date-number="${i-firstDay + 1}" ${today < new Date(`${this.year}-${this.month+1}-${i-firstDay + 1}`).setHours(0,0,0,0) ? 'disabled': ''}>${i-firstDay + 1}</button>`;
         continue;
       }
       dateString += '<span></span>';

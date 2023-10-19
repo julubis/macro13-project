@@ -10,7 +10,7 @@
       <h2 class="text-medium text-2">Calendar</h2>
       <div class="calendar">
         <div class="header">
-          <p class="text-medium text-3" id="month-year">October 2023</p>
+          <p class="text-medium text-3" id="month-year"></p>
           <div class="btn-group">
             <button id="prev">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -41,37 +41,40 @@
   </div>
   <div class="wrapper">
     <section class="one">
-      <h2 class="text-medium text-2">My Plan</h2>
+      <div class="header-goal">
+        <h2 class="text-medium text-2">My Plan</h2>
+        <a href="/#/plan">See more</a>
+      </div>
+      
       <div class="goal">
         <div class="btn-group">
           <button class="btn">Diet</button>
-          <button class="btn">Workout</button>
+          <button class="btn">Exercise</button>
           <button class="btn">Water</button>
         </div>
         <div class="data">
           <div class="metric">
-            <div class="section">
+            <div class="section" id="metric-1">
               <span></span>
               <div>
                 <p class="title">Burn</p>
                 <p class="ammount">600 kcal</p>
               </div>
             </div>
-            <div class="section">
+            <div class="section" id="metric-2">
               <span></span>
               <div>
                 <p class="title">Target</p>
                 <p id="target-goal" class="ammount">1000 kcal</p>
               </div>
             </div>
-            <div class="section">
+            <div class="section" id="metric-3">
               <span></span>
               <div>
                 <p class="title">Left</p>
                 <p class="ammount">400 kcal</p>
               </div>
             </div>
-
           </div>
           <div class="progress-wrapper">
             <svg width="164" height="164" viewBox="0 0 164 164" id="progress">
@@ -85,8 +88,25 @@
       </div>
     </section>
     <section class="two">
-      <h2 class="text-medium text-2">Journal</h2>
-      <div class="journal"></div>
+      <div class="header-journal">
+        <h2 class="text-medium text-2">Journal</h2>
+        <button>Add Data</button>
+      </div>
+      
+      <div class="journal" id="journal-list">
+        
+      </div>
     </section>
   </div>
+</div>
+
+<div class="modal hidden">
+  <form class="modal-body" id="add-weight-form">
+    <p>Add body weight progress</p>
+    <div class="form-control">
+      <input type="number" name="weight" id="weight-input" step="0.1" placeholder="55" value="" required>
+      <p>kg</p>
+    </div>
+    <button type="submit">Save</button>
+  </form>
 </div>
